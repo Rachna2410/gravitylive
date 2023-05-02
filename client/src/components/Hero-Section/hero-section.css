@@ -1,0 +1,33 @@
+.hero__content h2 {
+  font-weight: 600;
+  line-height: 55px;
+}
+
+.hero__content {
+  padding-top: 80px;
+}
+.search input {
+  border: none;
+  outline: none;
+  padding: 7px 10%;
+}
+
+.search {
+  width: 60%;
+  border: 1px solid #f17f19;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 50px;
+  margin-top: 20px;
+}
+
+.slider_img{
+  height: 500px;
+}
+
+@media only screen and (max-width: 768px){
+  .slider_img{
+    height: auto;
+  }
+}

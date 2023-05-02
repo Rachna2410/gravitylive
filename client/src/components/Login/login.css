@@ -1,0 +1,26 @@
+.login{
+    margin-left: 30%;
+    margin-top: 100px;
+    display: grid;
+    align-items: center;
+   }
+.inputBox{
+    display: block;
+    margin: 25px;
+    padding: 7px;
+    width: 300px;
+    border: 1px solid #f17f19;
+  }
+.inputButton{
+  margin: 25px;
+  padding: 10px;
+  width:150px;
+  background-color: #f17f19;
+  border: 1px solid #f17f19;
+  cursor: pointer;
+  color: white;
+  }
+
+  .non-valid{
+    color: red;
+  }
