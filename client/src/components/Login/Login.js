@@ -45,13 +45,16 @@ const Login = () => {
 
   const handleLogin = async () => {
     console.warn("email, password", inputField.email, inputField.password);
-    let result = await fetch("http://localhost:5000/api/user/login", {
-      method: "post",
-      body: JSON.stringify({ ...inputField }),
-      headers: {
-        "Content-Type": "application/json",
-      },
-    });
+    let result = await fetch(
+      "https://gravitylive-backend.onrender.com/api/user/login",
+      {
+        method: "post",
+        body: JSON.stringify({ ...inputField }),
+        headers: {
+          "Content-Type": "application/json",
+        },
+      }
+    );
 
     result = await result.json();
     console.warn(result);
