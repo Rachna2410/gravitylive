@@ -37,7 +37,7 @@ app.use(express.static(path.join(__dirname, "frontend", "build")));
 //   res.sendFile(path.join(__dirname, "client", "build", "index.html"));
 // });
 
-app.get("/", (req, res) => {
+app.get("*", (req, res) => {
   res.status(201).json({ message: "Connected to Backend!" });
 });
 app.listen(port, () => console.log(`Server is running on port ${port}`));
